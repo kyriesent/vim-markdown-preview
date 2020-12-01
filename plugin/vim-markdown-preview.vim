@@ -134,7 +134,7 @@ function! Vim_Markdown_Preview_Local()
       if g:vim_markdown_preview_use_xdg_open == 1
         call system('xdg-open vim-markdown-preview.html 1>/dev/null 2>/dev/null &')
       else
-        call system('see vim-markdown-preview.html 1>/dev/null 2>/dev/null &')
+        call system('wslview vim-markdown-preview.html 1>/dev/null 2>/dev/null &')
       endif
     else
       let curr_wid = system('xdotool getwindowfocus')
